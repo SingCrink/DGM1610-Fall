@@ -34,7 +34,14 @@ public class funtions : MonoBehaviour
 
     }
 
+    int CalcDiv (int n4, int n2)
 
+    {
+        Debug.Log("Number 4 =" + n1+" Number 2 =" + n2);
+        total = n4 / n2;
+
+        Debug.Log(total);
+        return total;
 
     //     void Customer(string fName, string lName, int a)
     //     {
