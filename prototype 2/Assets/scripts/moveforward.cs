@@ -5,7 +5,7 @@ using UnityEngine;
 public class moveforward : MonoBehaviour
 {
     public float speed = 40f;
-    public GameObject projectileprefab;
+    //public GameObject projectileprefab;
 
     // Update is called once per frame
     void Update()
