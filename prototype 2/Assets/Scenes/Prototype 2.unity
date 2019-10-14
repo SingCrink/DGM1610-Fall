@@ -534,6 +534,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animalPrefabs:
+<<<<<<< HEAD
+  - {fileID: 7232180425130978740}
+  - {fileID: 2519381001008286151}
+  - {fileID: 2598000776534834075}
+  - {fileID: 759411438}
+=======
   - {fileID: 2519381000945529716, guid: d46d80792fedd9041b504e86efe86d1c, type: 3}
   - {fileID: 7232180423815327797, guid: 91aaf751a2b5a074086b70e131d32dd7, type: 3}
   - {fileID: 2598000778576389303, guid: f58c32512c68b2a4fba226a6a988230e, type: 3}
@@ -541,6 +547,7 @@ MonoBehaviour:
   spawnPosZ: 20
   startDelay: 2
   spawnInterval: 1.5
+>>>>>>> master
 --- !u!4 &1538290352
 Transform:
   m_ObjectHideFlags: 0
