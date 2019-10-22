@@ -15,9 +15,8 @@ private float repeatRate = 2;
     }
 
     // Update is called once per frame
-    void Update()
+        void SpawnObstacle ()
     {
-        void SpawnObstacle ();
         Instantiate(obstaclePrefab, spawnPos, obstaclePrefab.transform.rotation);
     }
 }

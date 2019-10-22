@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,6 +7,7 @@ public class moveleft : MonoBehaviour
     private float speed = 30;
     private float leftBound = -15;
     private PlayerController PlayerControllerScript;
+    public float startDelay;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,3 +26,4 @@ public class moveleft : MonoBehaviour
         }
     }
 }
+*/
