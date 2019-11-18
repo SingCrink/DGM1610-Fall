@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 164954292}
   - component: {fileID: 164954291}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -315,8 +315,10 @@ GameObject:
   - component: {fileID: 314252955}
   - component: {fileID: 314252954}
   - component: {fileID: 314252953}
+  - component: {fileID: 314252958}
+  - component: {fileID: 314252957}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -394,6 +396,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &314252957
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314252952}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
+--- !u!114 &314252958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314252952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64c70803a4471b3418a6793eb811d1c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &829155216
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,7 +437,7 @@ GameObject:
   - component: {fileID: 829155218}
   - component: {fileID: 829155217}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -561,13 +591,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1829803692}
-  m_LocalRotation: {x: 0.6740513, y: 0.017823398, z: -0.01945024, w: 0.73821336}
-  m_LocalPosition: {x: 21.2, y: 27.5, z: 15.3}
+  m_LocalRotation: {x: 0.5006717, y: 0.4981252, z: -0.49902016, w: 0.5021733}
+  m_LocalPosition: {x: 19.76, y: 23.98, z: 13.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 84.798004, y: 0.059000004, z: -2.9640002}
+  m_LocalEulerAnglesHint: {x: 89.857, y: 14.041, z: -75.632}
 --- !u!1 &1888000323
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,7 +611,7 @@ GameObject:
   - component: {fileID: 1888000325}
   - component: {fileID: 1888000324}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Power Up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -595,7 +625,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1888000323}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
