@@ -5,23 +5,30 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
         public GameObject[] enemyPrefabs;
+        public float spawntime;
 
 
 
     void Start()
     {
-        
+        StartCoroutine(Spawn());
     }
 
 
-    private void Update()
+   
+
+    IEnumerator Spawn()
     {
-        if (Input.GetKeyDown(KeyCode.S))
+        while (true)
         {
-            Instantiate(enemyPrefabs[0], new Vector3(2, 0, 0), enemyPrefabs[0].transform.rotation);
-
-
+            int enemiesindex = Random.Range(0, enemyPrefabs.Length);
+            GameObject enemy = enemyPrefabs[enemiesindex];
+            Instantiate(enemy, transform.position, transform.rotation);
+            yield return new WaitForSeconds(spawntime);
         }
+        
+
+
     }
 
 
